@@ -21,9 +21,25 @@ if st.button('Hitung'):
 else:
     st.write('silahkan pencet tombol hitung!')
     
+import numpy as np
+array1 = np.random.randint(10,40, size=(10,))
+array2 = np.random.randint(10,40, size=(10,))
+
+import pandas as pd
+st.dataframe(pd.DataFrame({'Kelas A' : array1,
+                           'Kelas B' : array2
+                          })
+            )
+    
 import streamlit as st
 
 picture = st.camera_input("Take a picture")
 
 if picture:
     st.image(picture)
+    
+import streamlit as st
+
+st.balloons()
+    
+    
